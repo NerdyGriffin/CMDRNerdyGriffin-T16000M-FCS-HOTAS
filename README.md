@@ -77,14 +77,14 @@ I've created a cheat sheet that details all the included mappings which you can 
 
 # Full Mapping
 
-![Joystick Mapping](eybipp-t16000mfcs.jpg?raw=true "Joystick Mapping")
-![Keyboard Mapping](eybipp-keyboard.jpg?raw=true "Keyboard Mapping")
+![Joystick Mapping](eleiio-t16000mfcs.jpg?raw=true "Joystick Mapping")
+![Keyboard Mapping](eleiio-keyboard.jpg?raw=true "Keyboard Mapping")
 
-Created with https://edrefcard.info/
+Created with https://edrefcard.info/ - the current mapping is at https://edrefcard.info/binds/eleiio (the upstream images `eybipp-*.jpg` are kept for reference).
 
 # Changes In This Fork
 
-The mapping started from CMDJamski V1.0.3.0 and was re-saved by the game in the 4.0 file format when Odyssey arrived (the `.4.0` in the file name is the game's format version, not part of the scheme name).  Since then: the keyboard side was merged with a GameGlass-compatible layout so nearly every HOTAS binding also has a keyboard secondary; yaw moved from the throttle rocker to the stick twist, with the rocker used for partial throttle and panel page cycling; the throttle `Joy_3` ALT layer carries more functions (chaff / heat sink / shield cell / ECM on the stick hat, subsystem and target cycling, wingmen, reverse throttle); FSS and DSS controls were added; the SRV turret moved to the stick axes; and on-foot is keyboard and mouse only.  The 2026-09 update added Frontier's default keys for the colonisation, on-foot suit module, vanity camera and focus distance actions that did not exist when the upstream file was made.  The cheat sheet and mapping images above are the upstream originals and do not reflect these changes.
+The mapping started from CMDJamski V1.0.3.0 and was re-saved by the game in the 4.0 file format when Odyssey arrived (the `.4.0` in the file name is the game's format version, not part of the scheme name).  Since then: the keyboard side was merged with a GameGlass-compatible layout so nearly every HOTAS binding also has a keyboard secondary; yaw moved from the throttle rocker to the stick twist, with the rocker used for partial throttle and panel page cycling; the throttle `Joy_3` ALT layer carries more functions (chaff / heat sink / shield cell / ECM on the stick hat, subsystem and target cycling, wingmen, reverse throttle); FSS and DSS controls were added; the SRV turret moved to the stick axes; and on-foot is keyboard and mouse only.  The 2026-09 update added Frontier's default keys for the colonisation, on-foot suit module, vanity camera and focus distance actions that did not exist when the upstream file was made.  The cheat sheet above is the upstream original and does not reflect these changes; the Full Mapping images are generated from this fork's binding file.
 
 # Reporting Issues
 
