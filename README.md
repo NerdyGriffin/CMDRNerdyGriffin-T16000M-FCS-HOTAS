@@ -1,6 +1,8 @@
 ![Elite logo](elitelogo.png?raw=true)
-# CMDRJamski-T16000M-FCS-HOTAS v1.0
+# CMDRNerdyGriffin-T16000M-FCS-HOTAS v1.0
 An ever expanding Elite Dangerous control scheme for the Thrustmaster T16000M FCS HOTAS system
+
+This is CMDR NerdyGriffin's fork of [CMDRJamski-T16000M-FCS-HOTAS](https://github.com/jamsoft/CMDRJamski-T16000M-FCS-HOTAS).  The original files and notes are kept as-is below; see [Changes In This Fork](#changes-in-this-fork) for what is different.
 
 This is a WIP control scheme for the Thrustmaster T.16000M FCS HOTAS system.  I really didn't like the layout of the default scheme provided by Elite Dangerous so I set about modifying it to my liking.
 
@@ -57,13 +59,15 @@ To install the mapping you need to find your local Elite Bindings directory.  Yo
 
 `C:\Users\<your user name>\AppData\Local\Frontier Developments\Elite Dangerous\Options\Bindings`
 
-Copy these two files into that location:
+Copy these three files into that location (or just run `Setup.bat`, which does the same and backs up any existing StartPreset files):
 
-`CMDJamski-T16000M-FCS-HOTAS-V1.0.3.0.binds`
+`CMDRNerdyGriffin-T16000M-FCS-HOTAS-V1.0.4.0.binds`
+
+`StartPreset.4.start`
 
 `StartPreset.start`
 
-Then startup your game, this mapping will already be set as the default by including the StartPreset.start.  This file is simply configuring the CMDJamski-T16000M-FCS-HOTAS-V1.0.3.0.binds mapping as the default one to use.  This wont overwrite any existing mapping files.  But as always MAKE BACKUPS ANYWAY.
+Then startup your game, this mapping will already be set as the default by including the StartPreset.4.start (the game's four-context selector since Odyssey; the older StartPreset.start is still read by tools such as EDDI and GameGlass).  These files simply configure the CMDRNerdyGriffin-T16000M-FCS-HOTAS-V1.0.4.0.binds mapping as the default one to use.  This wont overwrite any existing mapping files.  But as always MAKE BACKUPS ANYWAY.
 
 # Cheat Sheet
 
@@ -77,6 +81,10 @@ I've created a cheat sheet that details all the included mappings which you can 
 ![Keyboard Mapping](eybipp-keyboard.jpg?raw=true "Keyboard Mapping")
 
 Created with https://edrefcard.info/
+
+# Changes In This Fork
+
+The mapping started from CMDJamski V1.0.3.0 and was re-saved by the game in the 4.0 file format when Odyssey arrived (the `.4.0` in the file name is the game's format version, not part of the scheme name).  Since then: the keyboard side was merged with a GameGlass-compatible layout so nearly every HOTAS binding also has a keyboard secondary; yaw moved from the throttle rocker to the stick twist, with the rocker used for partial throttle and panel page cycling; the throttle `Joy_3` ALT layer carries more functions (chaff / heat sink / shield cell / ECM on the stick hat, subsystem and target cycling, wingmen, reverse throttle); FSS and DSS controls were added; the SRV turret moved to the stick axes; and on-foot is keyboard and mouse only.  The 2026-09 update added Frontier's default keys for the colonisation, on-foot suit module, vanity camera and focus distance actions that did not exist when the upstream file was made.  The cheat sheet and mapping images above are the upstream originals and do not reflect these changes.
 
 # Reporting Issues
 
