@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Root PresetName="CMDJamski-T16000M-FCS-HOTAS-V1.0" MajorVersion="4" MinorVersion="0">
+<Root PresetName="CMDRNerdyGriffin-T16000M-FCS-HOTAS-V1.0" MajorVersion="4" MinorVersion="0">
 	<KeyboardLayout>en-US</KeyboardLayout>
 	<MouseXMode Value="" />
 	<MouseXDecay Value="0" />
@@ -392,6 +392,7 @@
 			<Modifier Device="Keyboard" Key="Key_LeftAlt" />
 		</Secondary>
 	</CyclePreviousSubsystem>
+	<GunsightSystem Value="Bindings_TraditionalGunsights" />
 	<TargetNextRouteSystem>
 		<Primary Device="T16000MTHROTTLE" Key="Joy_11" />
 		<Secondary Device="Keyboard" Key="Key_R">
@@ -1035,6 +1036,14 @@
 		<Primary Device="Keyboard" Key="Key_Tab" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</MultiCrewToggleMode>
+	<ToggleVanityCamera>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="Keyboard" Key="Key_RightShift" />
+	</ToggleVanityCamera>
+	<ToggleVanityCamera_Buggy>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="Keyboard" Key="Key_RightShift" />
+	</ToggleVanityCamera_Buggy>
 	<MultiCrewPrimaryFire>
 		<Primary Device="Mouse" Key="Mouse_1" />
 		<Secondary Device="{NoDevice}" Key="" />
@@ -1353,6 +1362,14 @@
 		<Primary Device="Keyboard" Key="Key_LeftArrow" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</FStopDec>
+	<FocusDistanceInc>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="Keyboard" Key="Key_UpArrow" />
+	</FocusDistanceInc>
+	<FocusDistanceDec>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="Keyboard" Key="Key_DownArrow" />
+	</FocusDistanceDec>
 	<FStopInc>
 		<Primary Device="Keyboard" Key="Key_RightArrow" />
 		<Secondary Device="{NoDevice}" Key="" />
@@ -1470,6 +1487,30 @@
 	<FSSMouseYMode Value="Bindings_MousePitchInverted" />
 	<FSSMouseYDecay Value="1" />
 	<FSSMouseSensitivity Value="80.00000000" />
+	<TriggerColonisationModule>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="Keyboard" Key="Key_Y" />
+	</TriggerColonisationModule>
+	<PlaceSettlement>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="Keyboard" Key="Key_V" />
+	</PlaceSettlement>
+	<RotateSettlementLeft>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="Keyboard" Key="Key_Q" />
+	</RotateSettlementLeft>
+	<RotateSettlementRight>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="Keyboard" Key="Key_E" />
+	</RotateSettlementRight>
+	<ChangeConstructionOption>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="Keyboard" Key="Key_N" />
+	</ChangeConstructionOption>
+	<ExitSettlementPlacementCamera>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="Keyboard" Key="Key_Backspace" />
+	</ExitSettlementPlacementCamera>
 	<FSSMouseDeadzone Value="0.00000000" />
 	<FSSMouseLinearity Value="1.00000000" />
 	<ExplorationFSSTarget>
@@ -1687,10 +1728,46 @@
 		<Primary Device="Keyboard" Key="Key_V" />
 		<Secondary Device="Mouse" Key="Mouse_3" />
 	</HumanoidMeleeButton>
+	<HumanoidToggleShieldBoosterModuleButton>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="Keyboard" Key="Key_4" />
+	</HumanoidToggleShieldBoosterModuleButton>
+	<HumanoidToggleJumpAssistModuleButton>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="Keyboard" Key="Key_5" />
+	</HumanoidToggleJumpAssistModuleButton>
+	<HumanoidToggleWeaponBoosterModuleButton>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="Keyboard" Key="Key_6" />
+	</HumanoidToggleWeaponBoosterModuleButton>
+	<HumanoidActivateSuitAbilityButton>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="Keyboard" Key="Key_T" />
+	</HumanoidActivateSuitAbilityButton>
+	<HumanoidPulseScanButton>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="Keyboard" Key="Key_B" />
+	</HumanoidPulseScanButton>
 	<HumanoidReloadButton>
 		<Primary Device="Keyboard" Key="Key_R" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</HumanoidReloadButton>
+	<HumanoidIncreaseSystemsPowerButton>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="{NoDevice}" Key="" />
+	</HumanoidIncreaseSystemsPowerButton>
+	<HumanoidIncreaseEnginesPowerButton>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="{NoDevice}" Key="" />
+	</HumanoidIncreaseEnginesPowerButton>
+	<HumanoidIncreaseWeaponsPowerButton>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="{NoDevice}" Key="" />
+	</HumanoidIncreaseWeaponsPowerButton>
+	<HumanoidResetPowerDistributionButton>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="{NoDevice}" Key="" />
+	</HumanoidResetPowerDistributionButton>
 	<HumanoidSwitchWeapon>
 		<Primary Device="{NoDevice}" Key="" />
 		<Secondary Device="{NoDevice}" Key="" />
@@ -1823,11 +1900,27 @@
 		<Inverted Value="0" />
 		<Deadzone Value="0.05000000" />
 	</StorePitchCamera>
+	<StorePitchCameraUp>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="{NoDevice}" Key="" />
+	</StorePitchCameraUp>
+	<StorePitchCameraDown>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="{NoDevice}" Key="" />
+	</StorePitchCameraDown>
 	<StoreYawCamera>
 		<Binding Device="T16000M" Key="Joy_XAxis" />
 		<Inverted Value="0" />
 		<Deadzone Value="0.05000000" />
 	</StoreYawCamera>
+	<StoreYawCameraLeft>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="{NoDevice}" Key="" />
+	</StoreYawCameraLeft>
+	<StoreYawCameraRight>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="{NoDevice}" Key="" />
+	</StoreYawCameraRight>
 	<StoreCamZoomIn>
 		<Primary Device="T16000M" Key="Pos_Joy_RZAxis" />
 		<Secondary Device="Keyboard" Key="Key_X" />
